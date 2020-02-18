@@ -17,3 +17,16 @@ async def play_nim(ctx):
 bot.run(token)
 
 print("Heyyyy")
+
+@bot.command(name='coin_flip')
+async def coin_flip():
+    await ctx.send(random.choice(["Heads", "Tails"]))
+
+bot.run(token)
+
+
+import random
+def coin_flip():
+  return random.choice(["Heads", "Tails"])
+
+  print coin_flip
