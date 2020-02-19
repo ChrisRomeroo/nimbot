@@ -25,6 +25,14 @@ async def coin_flip():
 bot.run(token)
 
 
+@bot.command(name  = 'average')
+async def average(nim1, nim2):
+    await ctx.send(nim1 + nim2) / 2.0 
+
+bot.run(token)
+
+
+
 import random
 def coin_flip():
   return random.choice(["Heads", "Tails"])
